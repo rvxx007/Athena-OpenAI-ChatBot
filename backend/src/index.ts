@@ -2,6 +2,12 @@ import express from "express";
 const app = express();
 import envObj from "./Config/envObj.js";
 
+// Middlewares
+app.use(express.json());
+
+
+
+// default Route
 app.get("/",(req, res)=>{
     res.status(200).json("hello");
 });
