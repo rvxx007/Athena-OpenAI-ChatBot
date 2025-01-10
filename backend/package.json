@@ -2,10 +2,10 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Athena-OpenAI-ChatBot is an intelligent chatbot powered by OpenAI's advanced language models. It provides natural, engaging conversations to answer questions, assist with tasks, and foster learning. With a user-friendly interface, Athena delivers quick solutions, creative ideas, and meaningful interactions.",
-  "main": "index.ts",
+  "main": "./src/index.ts",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npx tsc --watch\"\"nodemon -q dist/index.js\" ",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\" ",
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
